@@ -10,7 +10,7 @@ export const MyStory = () => {
     const { user } = useSelector(state=> state.auth)
     const { story } = useSelector(state=> state.stories)
     const dispatch = useDispatch()
-    console.log(user.displayName)
+
     useEffect(() => {
         dispatch(fetchStories())
     },[])
